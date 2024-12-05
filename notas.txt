@@ -1,0 +1,4 @@
+Não é orientada a objetos
+
+camelCase -> Na criação de variáveis
+
