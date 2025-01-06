@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listar Produtos</title>
+</head>
+<body>
+
+    <!-- Product form -->
+    <input type="text" id="newProduct" placeholder="Insira o nome do produto">
+    <button onclick="addProduct()">Add product</button>
+
+
+    <!-- Lista de produtos -->
+    <h1>
+        Produtos disponivei: 
+    </h1>
+
+
+
+    <div id="lista-produtos">
+    </div>
+
+
+
+
+    <!-- JavaScript -->
+    <script>
+
+        // Lista
+        var lista = [];
+
+        // Adicionar produto
+        function addProduct() {
+            var novoProduto = document.getElementById("newProduct").value;
+            lista.push(novoProduto);
+
+            document.getElementById("newProduct").value = "";
+        }
+
+        // Mostrar produtos
+        function showProduct() {
+            
+        }
+
+    </script>
+</body>
+</html>
