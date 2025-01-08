@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Objects</title>
+</head>
+<body>
+    <div id="name"></div>
+    <br>
+    <div id="loop"></div>
+    <br>
+    <div id="values"></div>
+    
+    <script>
+        const person = {
+            name: "John",
+            age: 30,
+            city: "New York"
+          };
+    
+    // Display property
+    const nome = document.getElementById("name");
+    nome.innerHTML = person.name
+
+
+    // Use a loop to display the prooerties
+    let values = "";
+    for (let i in person) {
+        values += person[i] + " ";
+    }
+
+    document.getElementById("loop").innerHTML = values;
+
+
+    // Use object values to display properties
+    const array = Object.values(person);
+    document.getElementById("values").innerHTML = array;
+
+
+
+    
+    
+    </script>    
+</body>
+</html>

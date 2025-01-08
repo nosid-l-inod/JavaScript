@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Events</title>
+</head>
+<body>
+    <h1 style="text-align: center;">This is an example of events in JavaScript</h1>
+    <h1 id="demo"></h1>
+    <button onclick="showDate()">
+        click to see the date
+    </button>
+
+    <h1>Events in js</h1>
+    <ol>
+        <h2>
+            <li>onchange</li>
+            <li>onclick</li>
+            <li>onmouseover</li>
+            <li>onmouseout</li>
+            <li>onkeydown</li>
+            <li>onload</li>
+        </h2>
+    </ol>
+
+    <script>
+        
+        // Function to show date
+        function showDate() {
+            document.getElementById("demo").innerHTML = Date();
+        }
+
+        
+    </script>
+</body>
+</html>
