@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in JavaScript</title>
+    <style>
+        img {
+            width: 60%;
+            border-radius: 2rem;
+        }
+
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Click me to see a message</h1>
+    <h2>
+        Events listens to activities in the browser and do something
+    </h2>
+
+    <h2>The image is changing</h2>
+    <img src="images/image1.jpg" alt="">
+    
+    <script>
+
+        // Simple event listener
+        let body = document.querySelector("h1");
+
+        // Using function
+        body.addEventListener("click", function() {
+            alert("You are clicking the body");
+        });
+
+        // With arrow function
+        body.addEventListener("click", () => {
+            alert("You are clicking the body");
+        })
+
+
+        // Switching images
+        const image = document.querySelector("img");
+
+        image.addEventListener("click", () => {
+            const src = image.getAttribute("src");
+            
+            if (src === "images/image2.jpg") {
+                image.setAttribute("src", "images/image1.jpg");
+            }
+            else {
+                image.setAttribute("src", "images/image2.jpg");
+            }
+        })
+
+
+          
+    </script>
+</body>
+</html>
