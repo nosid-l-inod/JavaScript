@@ -1,0 +1,41 @@
+1. General topics (Check this one later)
+https://whatwg.org/
+
+
+2. For JavaScript
+https://learnjavascript.online/
+
+
+3. More stuffs
+https://scrimba.com/courses
+
+
+4. Dev Resources
+https://dev.to/
+
+
+5. Project management
+https://asana.com/
+
+
+6. Check this one later
+https://developer.mozilla.org/en-US/curriculum/
+
+
+7. For linkedin and more
+https://www.linkedin.com/help/linkedin/answer/a554351/how-do-i-create-a-good-linkedin-profile-?lang=en
+
+
+8. Create a portfolio for me
+
+
+9. Check this later (Imporant)
+https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Soft_skills/Finding_a_job#create_a_linkedin_profile
+
+
+10. AI for grammar
+https://www.grammarly.com/
+
+
+11. Clone this repo and check everything
+https://github.com/mdn/learning-area.git

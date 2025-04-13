@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+    <style>
+
+        /* pseudo-class*/
+        article p::first-line {
+            font-size: 120%;
+            font-weight: bold;
+        }
+
+        /* Combining pseudo-class and pseudo-element*/
+        article p:first-child::first-line {
+            color: rebeccapurple;
+        }
+
+        /* Before - Used to add content before */
+        .box::before {
+            content: "THIS IS BEFORE THE OTHER CONTENT";
+        }
+
+        .box::after {
+            content: "THIS IS AFTER THE OTHER CONTENT";
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <article>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum fuga quia aperiam culpa ex, ducimus reiciendis quibusdam dolore quos saepe libero consequatur ipsa labore impedit assumenda? Magnam sint tenetur sequi!
+        </p>
+
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam sequi incidunt explicabo expedita fugiat voluptates sint labore architecto, enim laudantium, magni nisi quae, dolorum perspiciatis ipsum amet. Incidunt, nihil voluptatum.
+        </p>
+        <div class="box">
+            Content in the box
+        </div>
+    </article>  
+</body>
+</html>

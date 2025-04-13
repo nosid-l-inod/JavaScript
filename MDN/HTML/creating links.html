@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating links</title>
+</head>
+<body>
+    <h1>
+        <!-- Go to a section in the same page -->
+        <a href="#fragment">Go to fragment</a>
+    </h1>
+
+    <!-- Go to a section in another page -->
+    <h2>
+        <a href="lists.html#list">Go to list</a>
+    </h2>
+
+    <!-- Email link -->
+    <a href="mailto:nowhere@mozilla.org">Send email</a>     
+
+
+    <!-- Download links -->
+    <h2>
+        <a href="../images/image1.jpg" download="../images/image1.jpg">Download the image</a>
+    </h2>
+    
+    <!-- Open link in new tab -->
+    <h2>
+        <a href="https://www.youtube.com/watch?v=_d3o6uX1GzA" target="_blank">Open in new tab</a>
+    </h2>
+    
+    <!-- Block link -->
+    <a href="https://unsplash.com/" title="Unsplash">
+        <h1>Block link</h1>
+    </a>
+
+    <!-- Image link -->
+    <p>Image links</p>
+    <a href="https://unsplash.com/" title="click me to see something">
+        <img src="../images/image1.jpg" alt="Img" width="80%">
+    </a>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis quam corrupti maiores dignissimos, odio neque necessitatibus. Excepturi placeat quo, velit numquam voluptatibus ullam? Ipsa laudantium illum autem nisi, quod eaque!
+    </p>
+    <h2>Document fragment</h2>
+    <p>Link to a specific part of the page
+        <!-- This is the target -->
+        <a id="fragment">Fragment</a>
+    </p>
+</body>
+</html>

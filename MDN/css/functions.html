@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css functions</title>
+    <style>
+        .outer {
+            border: solid 5px black;
+        }
+
+        /* Calc function */
+        .box {
+            padding: 10px;
+            width: calc(90% - 30px);
+            background-color: rebeccapurple;
+            color: white;
+        }
+
+        /* Rotating */
+        .rotate {
+            margin: 30px;
+            width: 100px;
+            height: 100px;
+            background-color: rebeccapurple;
+            transform: rotate(0.3turn);
+        }
+
+        /* Scale */
+        .scale {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            margin: 1rem;
+        }
+
+        .scale:hover {
+            transform: scale(130%);
+            transition: .3s;
+        }
+
+        /* Tranform (x, y) */
+        .translate {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: 1rem;
+        }
+
+        .translate:hover {
+            transform: translate(50%, 0%);
+            transition: .5s;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Css function</h1>
+    <ul>
+        <li>Calc</li>
+        <li>Rotate</li>
+        <li>Scale</li>
+        <li>Translate</li>
+    </ul>
+    
+    <div class="outer">
+        <div class="box">
+            The inner box is 90% - 30px
+        </div>
+    </div>
+
+    <!-- This element is rotating -->
+    <div class="rotate"></div>
+
+    <!-- Scale -->
+    <div class="scale"></div>
+
+    <!-- Transform  -->
+    <div class="translate"></div>
+</body>
+</html>

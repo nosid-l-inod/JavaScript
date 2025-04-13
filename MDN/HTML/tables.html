@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        table {
+            table-layout: fixed;
+            width: 100%;
+            border-collapse: collapse;
+            border: 3px solid purple;
+        }
+
+        th, td {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <table>
+        <caption>NBA Teams</caption>
+
+        <!-- Table head -->
+        <thead>
+            <tr>
+                <!-- Scope - Indicates what cells the header is a cell for -->
+                <th scope="col">Team</th>
+                <th scope="col">Best Player</th>
+                <th scope="col">Championships</th>
+                <th scope="col">Most famous player</th>
+            </tr>
+        </thead>
+
+        <!-- Table body -->
+        <tbody>
+            <tr>
+                <th scope="row">Golden State Warriors</th>
+                <td>Stephen Curry</td>
+                <td>7</td>
+                <td>Stephen Curry</td>
+            </tr>
+            <tr>
+                <th scope="row">Los Angeles Lakers</th>
+                <td>Lebron James</td>
+                <td>17</td>
+                <td>Kobe Bryant</td>
+            </tr>
+            <tr>
+                <th scope="row">Los Angeles Clippers</th>
+                <td>Kawhi Leonard</td>
+                <td>0</td>
+                <td>Kawhi Leonard</td>
+            </tr>
+        </tbody>
+
+        <!-- Table footer -->
+        <tfoot>
+            <tr>
+                <th scope="row">Total teams</th>
+                <td colspan="2">2</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switching images</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        img {
+            width: 60%;
+            border-radius: 3rem;
+            cursor: pointer;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Switching images</h1>
+    <img src="../images/image1.jpg" alt="">
+    
+    <script>
+
+        let image = document.querySelector("img");
+
+        image.onclick = () => {
+            let src = image.getAttribute("src");
+
+            if (src === "../images/image1.jpg") {
+                image.setAttribute("src", "../images/image2.jpg");
+            }
+            else {
+                image.setAttribute("src", "../images/image1.jpg");
+            }
+        }
+        
+    </script>
+</body>
+</html>

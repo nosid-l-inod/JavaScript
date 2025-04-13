@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting started with css</title>
+
+    <!-- Internal sheet -->
+    <style>
+
+        /* Basic selector */
+        h1 {
+            color: red;
+        }
+
+
+        /* Using class */
+        .special {
+            color: orange;
+            font-weight: bold;
+        }
+
+
+        /* Target first paragraph after the h1 */
+        h1 + p {
+            font-size: 2rem;
+        }
+
+
+        /* Links */
+        a:link {
+            color: pink;
+        }
+
+        a:visited {
+            color: green;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Im the main heading</h1>
+    <p>
+        This is the paragraph of text
+        <span>Span element</span>
+    </p>
+
+    <p>
+        This is the second paragraph. It contains an <em>emphasized</em>element
+        <a href="#">Click me</a>
+    </p>
+
+    <ul>
+        <li>Item <span>one</span></li>
+        <li class="special">item two</li>
+        <li>Item <em>three</em></li>
+    </ul>
+</body>
+</html>
